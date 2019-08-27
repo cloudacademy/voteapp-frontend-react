@@ -6,6 +6,7 @@
     "axios": "^0.18.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
+    "eslint-utils": "^1.4.2",
     "jest": "23.6.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
