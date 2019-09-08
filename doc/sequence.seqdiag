@@ -1,0 +1,9 @@
+Browser->React Frontend (HTTP): Load UI
+React Frontend (HTTP)-->Browser: html/js/css
+Browser->Browser: render VoteApp
+Note over Browser: Repeat next for each ProgrammingLanguage 
+Browser->Go API (HTTP): AJAX GET request to /languages/{name}
+Go API (HTTP)->MongoDB: getLanguage(name)
+MongoDB-->Go API (HTTP): data
+Go API (HTTP)-->Browser: data
+Browser->Browser: ProgrammingLanguage render

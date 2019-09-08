@@ -1,0 +1,6 @@
+Browser->Browser: ProgrammingLangugage.Vote +1 Click
+Browser->Go API (HTTP): AJAX GET to /languages/{name}/vote
+Go API (HTTP)->MongoDB: voteLanguage(name)
+MongoDB-->Go API (HTTP): success
+Go API (HTTP)-->Browser: success
+Browser->Browser: ProgrammingLangugage.Vote render - increment count +1
