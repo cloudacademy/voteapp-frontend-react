@@ -19,7 +19,6 @@ class Vote extends Component{
     //implement the handleClick function which will be called when the user clicks on the voting button
     //this invokes an AJAX request to the API to vote on the current programming language
     var url = `http://${this.APIHOSTPORT}/languages/${this.props.id}/vote`;
-    axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
     axios.get(url)
       .then(response => this.setState({vote: this.state.vote+1}))
   }
